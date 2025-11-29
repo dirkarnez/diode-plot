@@ -1,1 +1,2 @@
-[Draggable exponential function | JSXGraph share](https://jsxgraph.uni-bayreuth.de/share/example/draggable-exponential-function)
+- [dirkarnez/jsxgraph-playground](https://github.com/dirkarnez/jsxgraph-playground)
+  - [Draggable exponential function | JSXGraph share](https://jsxgraph.uni-bayreuth.de/share/example/draggable-exponential-function)
