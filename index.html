@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My JSXGraph Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
+</head>
+<body>
+    <a href="https://github.com/dirkarnez/jsxgraph-playground" target="_blank">dirkarnez/jsxgraph-playground</a><br>
+    <div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
+    <script>
+        var board = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10], axis: true});
+        
+        var a = board.create('slider', [[2, -5], [7, -5], [-5, 1, 5]], { name: 'a' });
+        var b = board.create('slider', [[2, -6], [7, -6], [-5, 0, 5]], { name: 'b' });
+        var c = board.create('slider', [[2, -7], [7, -7], [-5, 0, 5]], { name: 'c' });
+
+        var f = board.create('functiongraph', [
+            function(x) {
+                return a.Value() * x * x + b.Value() * x + c.Value();
+            }
+        ]);
+    </script>
+</body>
+</html>
