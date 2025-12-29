@@ -1,7 +1,7 @@
 function func(x) {
   //x /= 10;
   //return Math.sin(x) * Math.cos(x * 2 + 1) * Math.sin(x * 3 + 2) * 50;
-  const Is = Math.pow(10, -12);
+  const Is = Math.pow(10, -14);
   const q = 1.602 * Math.pow(10, -19);
   const V = x;
   const n = 1; // ideal factor
